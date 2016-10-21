@@ -1,0 +1,24 @@
+body {
+  background: #b1d9f4;
+}
+
+.ray {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  font-family: fantasy;
+  font-size: 1.5em;
+}
+
+@keyframes rayGlow {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+};
+
+svg.curved {
+  height: 500px;
+  width: 100%;
+}

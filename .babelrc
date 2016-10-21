@@ -1,0 +1,16 @@
+{
+ "presets": ["react", "airbnb", "es2015"],
+ "env": {
+    "test": {
+      "plugins": [
+        [
+          "react-hot-loader/babel",
+          {
+            "config": "./webpack.test.config.js",
+            "verbose": false
+          }
+        ]
+      ]
+    }
+  }
+}
