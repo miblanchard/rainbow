@@ -11,6 +11,9 @@ describe('<App />', () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find(Rainbow)).to.have.length(2);
   });
+  it('should be a stateless functional component', () => {
+    expect(App).to.be.a('function');
+  });
 });
 
 describe('<Rainbow flatRainbow={true}/>', () => {
@@ -46,11 +49,19 @@ describe('<RayFlat />', () => {
       gradient={'white'}
     />);
 
+  it('should be a stateless functional component', () => {
+    expect(RayFlat).to.be.a('function');
+  });
   it('should have className ray', () => {
     expect(wrapper.find('.ray')).to.have.length(1);
   });
   it('should set prop mainColor', () => {
-    expect(wrapper.find({style: background}).text()).to.equal('red');
+    expect(wrapper.props().style.background).to.equal('red');
   });
-
+  it('should trigger clickRay when you click on it', () => {
+    wrapper.find('div').simulate('click');
+    expect(spy.calledOnce).to.be.true;
+    wrapper.find('div').simulate('click');
+    expect(spy.calledTwice).to.be.true;
+  });
 });
