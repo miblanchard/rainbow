@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 const RayFlat = ({ clickRay, mainColor, gradient, index }) => {
   const styles = {
     background: mainColor,
-    // background: `linearGradient(270deg, ${mainColor}, ${gradient})`,
+    // background: `linearGradient(${270}deg, ${mainColor}, ${gradient})`,
     // backgroundSize: '400% 400%',
     // animation: 'rayGlow 5s ease infinite',
   };
