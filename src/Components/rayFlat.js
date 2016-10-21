@@ -4,8 +4,8 @@ const RayFlat = ({ clickRay, mainColor, gradient, index }) => {
   const styles = {
     background: mainColor,
     // background: `linearGradient(270deg, ${mainColor}, ${gradient})`,
-    backgroundSize: '400% 400%',
-    animation: 'rayGlow 5s ease infinite',
+    // backgroundSize: '400% 400%',
+    // animation: 'rayGlow 5s ease infinite',
   };
   const click = () => clickRay(index);
 
