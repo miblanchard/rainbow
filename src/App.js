@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Rainbow from './Components/rainbowFlat';
+import Rainbow from './Components/rainbow';
 
 const App = () => (
   <div className="App">

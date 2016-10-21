@@ -10,7 +10,7 @@ const RayFlat = ({ clickRay, mainColor, gradient, index }) => {
   const click = () => clickRay(index);
 
   return (
-    <div className="ray" id={`ray${index}`} style={styles} onClick={click}>
+    <div className="rayFlat" id={`ray${index}`} style={styles} onClick={click}>
       Click Me!
     </div>
   );

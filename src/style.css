@@ -2,11 +2,11 @@ body {
   background: #b1d9f4;
 }
 
-.ray {
-  height: 100px;
+.rayFlat {
+  height: 80px;
   width: 100%;
   text-align: center;
-  line-height: 100px;
+  line-height: 80px;
   vertical-align: middle;
   font-family: fantasy;
   font-size: 1.5em;
